@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+*,
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.90rem;
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  color: #fff;
+  background-color: #3b5998;
+  padding: 0 20px;
+}
+
+.header .user-menu {
+  display:block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header .user-menu li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header .user-menu li + li {
+  margin-left: 10px;
+}
+
+.post-list {
+  display: block;
+  width: 800px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.post {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.post + .post {
+  margin-top: 20px;
+}
+
+.post header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: top;
+}
+
+img:not(.n-img) {
+  align-self: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.post header .post-author-date {
+  margin-left: 10px;
+}
+
+.post header .post-author-date p{
+  padding: 0;
+  margin: 0;
+}
+
+.post header .post-author-date p:first-child {
+  font-weight: 700;
+}
+
+.post main {
+  padding: 20px 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.post footer {
+  padding-top: 20px;
+}
+
+.post footer .comment {
+  display: flex;
+  align-items: top;
+}
+
+.post footer .comment + .comment {
+  margin-top: 10px;
+}
+
+.post footer .comment p {
+  flex-grow: 1;
+  font-size: 0.80rem;
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin: 0;
+  margin-left: 10px;
+  border-radius: 20px;
+}
+
+.editor {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 14px 20px;
+  margin-bottom: 20px;
+}
+
+.editor h3 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.editor form {
+  text-align: right;
+}
+
+.editor form textarea {
+  width: 100%;
+  background-color: #eaeaea;
+  color: #333;
+  font-family: inherit;
+  font-size: inherit;
+  overflow: auto;
+  padding: 10px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+}
+
+.editor form button {
+  display: inline-block;
+  color: #fff;
+  background-color: #3b5998;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
